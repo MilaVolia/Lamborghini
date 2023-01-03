@@ -1,0 +1,102 @@
+@import 'nullstyle';
+
+@font-face {
+  font-family: 'Impact, sans-serif';
+  src: url(../fonts/impact.ttf);
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #040404;
+}
+
+.header {
+  padding-top: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #d8d4ca 0%, rgba(217, 217, 217, 0) 100%);
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-list {
+  display: flex;
+  gap: 0 40px;
+  padding-top: 25px;
+}
+
+.menu-left {
+  padding-left: 25px;
+}
+
+.menu-right {
+  padding-right: 80px;
+}
+
+.menu-link {
+  color: #363636;
+  font-size: 16px;
+}
+
+.promo {
+  background-image: url(../img/promo.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__inner {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: #363636;
+    margin-bottom: 10px;
+  }
+  &__arow {
+    margin-top: auto;
+    margin-bottom: 30px;
+    align-self: center;
+  }
+  &__img {
+    display: inline;
+  }
+}
+
+.title {
+  font-family: 'Impact, sans-serif';
+  font-weight: 400;
+  font-size: 76px;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-family: 'Impact, sans-serif';
+  font-weight: 400;
+  font-size: 48px;
+  border-bottom: 1px solid #040404;
+  margin-bottom: 10px;
+  align-self: center;
+}
+.subtitle span {
+  font-family: 'Impact, sans-serif';
+  display: block;
+  font-size: 34px;
+  color: #9f6b08;
+  font-weight: 400;
+  padding: 10px 0;
+}
