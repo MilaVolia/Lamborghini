@@ -20,7 +20,7 @@ body {
   right: 0;
   background: linear-gradient(180deg, #d8d4ca 0%, rgba(217, 217, 217, 0) 100%);
 }
-.container {
+.big-container {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
@@ -94,9 +94,114 @@ body {
 }
 .subtitle span {
   font-family: 'Impact, sans-serif';
+  font-weight: 400;
   display: block;
   font-size: 34px;
   color: #9f6b08;
   font-weight: 400;
   padding: 10px 0;
+}
+
+//info
+.container {
+  max-width: 895px;
+  margin: 0 auto;
+}
+
+.info {
+  margin-bottom: 100px;
+  &__part {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
+  &__part--first {
+    display: block;
+  }
+
+  &__part--second .info__text {
+    max-width: 352px;
+  }
+
+  &__part--third {
+    padding-top: 66px;
+  }
+
+  &__part--third .info__text {
+    max-width: 377px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  &__part-textbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+  }
+
+  &__text {
+    flex-basis: 440px;
+    margin-bottom: 30px;
+  }
+
+  &__part-img {
+    object-fit: cover;
+  }
+
+  &__content {
+    flex-basis: 415px;
+  }
+
+  &__table {
+    flex-basis: 450px;
+    border-bottom: 1px solid #040404;
+    position: relative;
+    top: 20px;
+  }
+  &__table::before {
+    content: '';
+    border-top: 1px solid #040404;
+    position: absolute;
+    width: 100%;
+    top: -20px;
+  }
+
+  &__table td {
+    padding-bottom: 20px;
+  }
+}
+
+//track
+
+.track {
+  background-image: url(../img/track-bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 32px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 435px;
+  }
+
+  &__img {
+    margin: auto auto 90px auto;
+  }
 }
